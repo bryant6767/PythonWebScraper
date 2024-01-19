@@ -19,13 +19,13 @@ WebDriverWait(driver, 5).until(
 
 input_element = driver.find_element(By.CLASS_NAME, "gLFyf")
 input_element.clear()
-input_element.send_keys("wahbe bryant" + Keys.ENTER)
+input_element.send_keys("wahbe" + Keys.ENTER)
 
 WebDriverWait(driver, 5).until(
-    EC.presence_of_element_located((By.PARTIAL_LINK_TEXT, "Tech With Tim"))
+    EC.presence_of_element_located((By.PARTIAL_LINK_TEXT, "wahbe"))
 )
 
-link = driver.find_element(By.PARTIAL_LINK_TEXT, "Tech With Tim")
+link = driver.find_element(By.PARTIAL_LINK_TEXT, "wahbe")
 link.click()
 
 time.sleep(10)
